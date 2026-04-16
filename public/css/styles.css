@@ -1,0 +1,101 @@
+:root {
+  --primary: #2ecc71;
+  --secondary: #3498db;
+  --dark: #2c3e50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  padding: 1rem;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url("../img/hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+/* PRODUCTOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* FORM */
+.form {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* CENTER */
+.center {
+  text-align: center;
+  padding: 2rem;
+}

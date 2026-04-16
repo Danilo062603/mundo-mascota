@@ -1,33 +1,76 @@
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+function agregarCarrito(nombre, precio, imagen) {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-function agregarCarrito(nombre, precio) {
-  carrito.push({ nombre, precio });
+  carrito.push({
+    nombre,
+    precio,
+    imagen
+  });
+
   localStorage.setItem("carrito", JSON.stringify(carrito));
-  alert(nombre + " agregado 🛒");
+
+  actualizarContador();
 }
 
-function mostrarCarrito() {
-  let contenedor = document.getElementById("carrito");
-  let total = 0;
+function renderCarrito() {
+  const contenedor = document.getElementById("carrito-items");
+
+  if (!contenedor) return;
+
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
   contenedor.innerHTML = "";
 
-  carrito.forEach((p, i) => {
+  let total = 0;
+
+  carrito.forEach((producto, index) => {
+    total += producto.precio;
+
     contenedor.innerHTML += `
-      <div class="card">
-        <h3>${p.nombre}</h3>
-        <p>$${p.precio}</p>
-        <button onclick="eliminar(${i})">Eliminar</button>
+      <div class="carrito-item">
+        <img src="${producto.imagen}" alt="${producto.nombre}">
+        <div class="carrito-info">
+          <h4>${producto.nombre}</h4>
+          <p>$${producto.precio.toLocaleString()}</p>
+        </div>
+        <button class="btn-eliminar" onclick="eliminar(${index})">X</button>
       </div>
     `;
-    total += p.precio;
   });
 
-  document.getElementById("total").innerText = "Total: $" + total;
+  const totalEl = document.getElementById("total");
+
+  if (totalEl) {
+    totalEl.textContent = `$${total.toLocaleString()}`;
+  }
 }
 
-function eliminar(i) {
-  carrito.splice(i, 1);
+function eliminar(index) {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  carrito.splice(index, 1);
+
   localStorage.setItem("carrito", JSON.stringify(carrito));
-  mostrarCarrito();
+
+  renderCarrito();
+  actualizarContador();
+}
+
+function actualizarContador() {
+  const contador = document.getElementById("contador-carrito");
+
+  if (!contador) return;
+
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  contador.textContent = carrito.length;
+}
+
+actualizarContador();
+renderCarrito();
+
+function vaciarCarrito() {
+  localStorage.removeItem("carrito");
+  renderCarrito();
+  actualizarContador();
 }

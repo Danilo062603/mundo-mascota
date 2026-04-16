@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Mascota</title>
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
@@ -9,7 +10,7 @@
 
 <header class="header">
   <div class="logo-container">
-    <img src="public/img/logo.png" class="logo">
+    <img src="public/img/logo.png" class="logo" alt="Logo">
     <h1>Mundo Mascota</h1>
   </div>
 
@@ -17,7 +18,7 @@
     <a href="index.html">Inicio</a>
     <a href="productos.html">Productos</a>
     <a href="citas.html">Citas</a>
-    <a href="carrito.html">🛒</a>
+    <a href="carrito.html">🛒 <span id="contador-carrito">0</span></a>
   </nav>
 </header>
 
@@ -37,5 +38,6 @@
   <p>© 2026 Mundo Mascota</p>
 </footer>
 
+<script src="public/js/app.js"></script>
 </body>
 </html>

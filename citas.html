@@ -2,38 +2,43 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Citas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas Veterinarias</title>
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
 
 <header class="header">
-  <h1>Agendar Cita</h1>
+  <h1>Citas Veterinarias</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+  </nav>
 </header>
 
-<main>
-  <form action="confirmacion.html" class="form">
+<section class="citas-wrapper">
+  <div class="citas-card">
+    <h2>Agenda tu cita veterinaria 🩺</h2>
 
-    <label>Nombre</label>
-    <input type="text" required>
+    <form class="form-cita">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="text" placeholder="Nombre de tu mascota" required>
 
-    <label>Mascota</label>
-    <input type="text" required>
+      <select required>
+        <option disabled selected>Tipo de servicio</option>
+        <option>Consulta General</option>
+        <option>Vacunación</option>
+        <option>Peluquería</option>
+        <option>Desparasitación</option>
+      </select>
 
-    <label>Servicio</label>
-    <select>
-      <option>Baño</option>
-      <option>Vacunación</option>
-      <option>Consulta</option>
-    </select>
+      <input type="date" required>
+      <input type="time" required>
 
-    <label>Fecha</label>
-    <input type="date" required>
-
-    <button type="submit">Agendar</button>
-
-  </form>
-</main>
+      <button type="submit">Agendar cita</button>
+    </form>
+  </div>
+</section>
 
 </body>
 </html>

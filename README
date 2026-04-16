@@ -1,30 +1,26 @@
 # 🐶 Mundo Mascota Web
 
-## 📌 Descripción
+##  Descripción
 
 Mundo Mascota es una aplicación web diseñada para facilitar la compra de productos para mascotas y el agendamiento de citas veterinarias de manera rápida y sencilla.
 
 El sistema está enfocado en usuarios que buscan centralizar en un solo lugar servicios como alimentación, accesorios y atención médica para sus mascotas.
 
----
 
-## 🎯 Funcionalidades principales
 
-* 🛒 Visualización de productos para mascotas
-* 🐕 Compra de productos (simulada en este avance)
-* 📅 Agendamiento de citas veterinarias
-* ✅ Confirmación de citas
-* 📱 Diseño responsive (adaptado a móviles y escritorio)
+##  Funcionalidades principales
 
----
+*  Visualización de productos para mascotas
+*  Compra de productos (simulada en este avance)
+*  Agendamiento de citas veterinarias
+*  Confirmación de citas
+*  Diseño responsive (adaptado a móviles y escritorio)
 
-## 🎨 Prototipo navegable
 
-🔗 [Agregar aquí enlace de Figma]
 
----
 
-## 🧰 Stack tecnológico
+
+##  Stack tecnológico
 
 **Frontend:**
 
@@ -44,14 +40,14 @@ El sistema está enfocado en usuarios que buscan centralizar en un solo lugar se
 
 * GitHub Pages (opcional)
 
----
 
-## 🏗️ Arquitectura
+
+##  Arquitectura
 
 * **Estilo:** Cliente - Servidor
 * **Patrón:** MVC (Modelo - Vista - Controlador)
 
-### 📂 Estructura del proyecto
+###  Estructura del proyecto
 
 ```
 mundo-mascota-web/
@@ -64,7 +60,7 @@ public/
 
 ---
 
-## 🖥️ Vistas implementadas
+##  Vistas implementadas
 
 * [x] Página principal (Home)
 * [x] Listado de productos
@@ -73,7 +69,7 @@ public/
 
 ---
 
-## 🔗 Mapeo de rutas
+##  Mapeo de rutas
 
 | Vista            | Ruta           | Método | Endpoint           | Descripción       |
 | ---------------- | -------------- | ------ | ------------------ | ----------------- |
@@ -83,7 +79,7 @@ public/
 
 ---
 
-## 🗂️ Entidades principales
+##  Entidades principales
 
 ### Producto
 
@@ -100,7 +96,7 @@ public/
 
 ---
 
-## ⚙️ Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 
 1. Clonar el repositorio:
 
@@ -118,20 +114,21 @@ index.html
 
 ---
 
-## 🧪 Estado del proyecto
+##  Estado del proyecto
 
-🚧 En desarrollo (Primer avance - frontend sin backend)
+ En desarrollo (Primer avance - frontend sin backend)
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
-Tu Nombre
+Julian Ramirez
+Danilo Ramirez
 IF2003 - Programación Web
 Grupo 603
 
 ---
 
-## 📌 Notas
+##  Notas
 
 Este proyecto corresponde al primer avance del curso, enfocado en diseño de interfaz y definición de arquitectura. El backend será implementado en fases posteriores.

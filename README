@@ -1,6 +1,6 @@
-# 🐶 Mundo Mascota Web
+#  Mundo Mascota Web
 
-## 📌 Descripción
+##  Descripción
 
 Mundo Mascota es una aplicación web diseñada para facilitar la compra de productos para mascotas y el agendamiento de citas veterinarias de manera rápida y sencilla.
 
@@ -8,7 +8,7 @@ El sistema está enfocado en usuarios que buscan centralizar en un solo lugar se
 
 ---
 
-## ⚙️ Funcionalidades principales
+##  Funcionalidades principales
 
 - Visualización de productos para mascotas  
 - Compra de productos *(simulada en este avance)*  
@@ -18,7 +18,7 @@ El sistema está enfocado en usuarios que buscan centralizar en un solo lugar se
 
 ---
 
-## 🛠️ Stack tecnológico
+##  Stack tecnológico
 
 ### **Frontend**
 - HTML5 (semántico)  
@@ -36,14 +36,14 @@ El sistema está enfocado en usuarios que buscan centralizar en un solo lugar se
 
 ---
 
-## 🧠 Arquitectura
+##  Arquitectura
 
 - **Estilo:** Cliente - Servidor  
 - **Patrón:** MVC (Modelo - Vista - Controlador)  
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```bash
 mundo-mascota-web/
@@ -53,17 +53,17 @@ mundo-mascota-web/
 ├── controllers/
 ├── public/
 └── index.html
-🖥️ Vistas implementadas
+ Vistas implementadas
  Página principal (Home)
  Listado de productos
  Formulario de citas
  Confirmación de cita
-🔗 Mapeo de rutas
+ Mapeo de rutas
 Vista	Ruta	Método	Endpoint	Descripción
 Productos	/productos	GET	/api/productos	Obtener productos
 Crear cita	/citas	POST	/api/citas	Registrar cita
 Detalle producto	/productos/:id	GET	/api/productos/:id	Obtener producto
-🧾 Entidades principales
+Entidades principales
 Producto
 nombre (string, obligatorio)
 precio (number, > 0)
@@ -73,25 +73,25 @@ nombre (string, obligatorio)
 mascota (string, obligatorio)
 fecha (date, obligatorio)
 servicio (string, obligatorio)
-▶️ Cómo ejecutar el proyecto
+ Cómo ejecutar el proyecto
 Clonar el repositorio:
 git clone https://github.com/tu-usuario/mundo-mascota-web.git
 Abrir el archivo:
 index.html
 Ejecutar en el navegador
-📊 Estado del proyecto
+Estado del proyecto
 
-🟡 En desarrollo (Primer avance - frontend sin backend)
+En desarrollo (Primer avance - frontend sin backend)
 
-👨‍💻 Autor
+ Autores
 Danilo Ramirez
 Julian Ramirez
 Luis David Correa
 Carlos andres arroyave
 
-📚 IF2003 - Programación Web
-🎓 Institución Universitaria de Envigado
+ IF2003 - Programación Web
+ Institución Universitaria de Envigado
 
-📝 Notas
+ Notas
 
 Este proyecto corresponde al primer avance del curso, enfocado en diseño de interfaz y definición de arquitectura. El backend será implementado en fases posteriores.

@@ -1,135 +1,193 @@
-# 🐶 Mundo Mascota Web
+# 🐾 Mundo Mascota Web
 
-##  Descripción
+<p align="center">
+  <img src="https://img.shields.io/badge/Estado-En%20desarrollo-yellow" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-blue" />
+  <img src="https://img.shields.io/badge/Backend-Node.js%20(planeado)-green" />
+  <img src="https://img.shields.io/badge/License-Academic-lightgrey" />
+</p>
 
-Mundo Mascota es una aplicación web diseñada para facilitar la compra de productos para mascotas y el agendamiento de citas veterinarias de manera rápida y sencilla.
+<p align="center">
+  🐶 Plataforma web para productos y servicios veterinarios
+</p>
 
-El sistema está enfocado en usuarios que buscan centralizar en un solo lugar servicios como alimentación, accesorios y atención médica para sus mascotas.
+---
 
+## 🚀 Demo
 
+🔗 **Ver proyecto:** *(agrega aquí tu link cuando lo subas a GitHub Pages)*
+👉 https://tu-demo-aqui.com
 
-##  Funcionalidades principales
+---
 
-*  Visualización de productos para mascotas
-*  Compra de productos (simulada en este avance)
-*  Agendamiento de citas veterinarias
-*  Confirmación de citas
-*  Diseño responsive (adaptado a móviles y escritorio)
+## 📸 Preview del sistema
 
+<p align="center">
+  <img src="https://via.placeholder.com/800x400?text=Home+Mundo+Mascota" width="80%" />
+  <br><br>
+  <img src="https://via.placeholder.com/800x400?text=Productos" width="80%" />
+</p>
 
+> ⚠️ Reemplaza estas imágenes por screenshots reales de tu app
 
+---
 
+## 📌 Descripción
 
-##  Stack tecnológico
+**Mundo Mascota Web** es una aplicación diseñada para facilitar la compra de productos para mascotas 🐱🐶 y el agendamiento de citas veterinarias 🏥.
 
-**Frontend:**
+Centraliza múltiples servicios en una sola plataforma:
 
-* HTML5 (semántico)
-* CSS3 (Flexbox y Grid)
-* JavaScript (básico)
+* 🦴 Alimentación
+* 🧸 Accesorios
+* 💉 Atención médica
 
-**Backend (planeado):**
+---
 
-* Node.js + Express
+## ✨ Funcionalidades
 
-**Base de datos (planeada):**
+* 🛍️ Visualización de productos
+* 💳 Compra de productos *(simulada)*
+* 📅 Agendamiento de citas
+* ✔️ Confirmación de citas
+* 📱 Diseño responsive
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+### 🎨 Frontend
+
+* HTML5
+* CSS3 (Flexbox + Grid)
+* JavaScript
+
+### ⚙️ Backend *(Próximamente)*
+
+* Node.js
+* Express
+
+### 🗄️ Base de datos *(Próximamente)*
 
 * MySQL
 
-**Hosting:**
+---
 
-* GitHub Pages (opcional)
+## 🧠 Arquitectura
 
+* 🏗️ **Estilo:** Cliente - Servidor
+* 📐 **Patrón:** MVC
 
+---
 
-##  Arquitectura
+## 📁 Estructura del proyecto
 
-* **Estilo:** Cliente - Servidor
-* **Patrón:** MVC (Modelo - Vista - Controlador)
-
-###  Estructura del proyecto
-
-```
+```bash
 mundo-mascota-web/
-
-models/
-views/
-controllers/
-public/
+│
+├── models/
+├── views/
+├── controllers/
+├── public/
+└── index.html
 ```
 
 ---
 
-##  Vistas implementadas
+## 🖥️ Vistas implementadas
 
-* [x] Página principal (Home)
-* [x] Listado de productos
-* [x] Formulario de citas
-* [x] Confirmación de cita
-
----
-
-##  Mapeo de rutas
-
-| Vista            | Ruta           | Método | Endpoint           | Descripción       |
-| ---------------- | -------------- | ------ | ------------------ | ----------------- |
-| Productos        | /productos     | GET    | /api/productos     | Obtener productos |
-| Crear cita       | /citas         | POST   | /api/citas         | Registrar cita    |
-| Detalle producto | /productos/:id | GET    | /api/productos/:id | Obtener producto  |
+| Vista                  | Estado |
+| ---------------------- | ------ |
+| 🏠 Home                | ✅      |
+| 🛍️ Productos          | ✅      |
+| 📅 Formulario de citas | ✅      |
+| ✔️ Confirmación        | ✅      |
 
 ---
 
-##  Entidades principales
+## 🔗 Rutas
 
-### Producto
-
-* nombre (string, obligatorio)
-* precio (number, > 0)
-* descripción (string, opcional)
-
-### Cita
-
-* nombre (string, obligatorio)
-* mascota (string, obligatorio)
-* fecha (date, obligatorio)
-* servicio (string, obligatorio)
+| Endpoint           | Método | Descripción         |
+| ------------------ | ------ | ------------------- |
+| /api/productos     | GET    | Obtener productos   |
+| /api/productos/:id | GET    | Detalle de producto |
+| /api/citas         | POST   | Crear cita          |
 
 ---
 
-##  Cómo ejecutar el proyecto
+## 🧾 Modelos
 
-1. Clonar el repositorio:
+### 🛍️ Producto
 
+```json
+{
+  "nombre": "string",
+  "precio": "number",
+  "descripcion": "string"
+}
 ```
+
+### 📅 Cita
+
+```json
+{
+  "nombre": "string",
+  "mascota": "string",
+  "fecha": "date",
+  "servicio": "string"
+}
+```
+
+---
+
+## ▶️ Instalación
+
+```bash
+# Clonar repositorio
 git clone https://github.com/tu-usuario/mundo-mascota-web.git
-```
 
-2. Abrir el archivo:
+# Abrir proyecto
+cd mundo-mascota-web
 
+# Ejecutar
+abrir index.html
 ```
-index.html
-```
-
-3. Ejecutar en el navegador
 
 ---
 
-##  Estado del proyecto
+## 📊 Estado del proyecto
 
- En desarrollo (Primer avance - frontend sin backend)
-
----
-
-##  Autor
-
-Julian Ramirez
-Danilo Ramirez
-Luis david correa
-IF2003 - Programación Web
-Grupo 603
+🟡 En desarrollo (Primer avance - frontend)
 
 ---
 
-##  Notas
+## 🧑‍💻 Autores
 
-Este proyecto corresponde al primer avance del curso, enfocado en diseño de interfaz y definición de arquitectura. El backend será implementado en fases posteriores.
+* Danilo Ramirez
+* Julian Ramirez
+* Luis David Correa
+
+🎓 Institución Universitaria de Envigado
+📚 Programación Web - IF2003
+
+---
+
+## 🔮 Próximas mejoras
+
+* 🔐 Sistema de autenticación
+* 🛒 Carrito funcional
+* 💳 Integración de pagos
+* 📡 Backend completo
+* 📊 Panel de administración
+
+---
+
+## ⭐ Notas
+
+Este proyecto forma parte de un desarrollo académico y evolucionará en futuras entregas.
+
+---
+
+<p align="center">
+  Hecho con ❤️ para mascotas
+</p>

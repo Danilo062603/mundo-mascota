@@ -197,13 +197,12 @@ npx http-server
 
 - **Curso:** IF2003 - Programación Web
 - **Institución:** Institución Universitaria de Envigado
-- **Nivel:** Primer Avance
 
 ---
 
 ## 📝 Notas
 
-> Este proyecto corresponde al **primer avance del curso**, enfocado en:
+> Este proyecto corresponde al **avance del curso**, enfocado en:
 > - Diseño de interfaz
 > - Prototipado
 > - Definición de arquitectura
